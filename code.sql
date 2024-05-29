@@ -9,15 +9,25 @@ instruktor(ic)a, svatko ima jedan automobil. Također ima i više polaznika/pola
 plaćaju u jednoj ili više rata.
 */
 
-create table instruktori (id_ins smallint not null, id_auto smallint not null, ime varchar, prezime varchar);
+create table instruktori (id_ins smallint not null,
+						id_auto smallint not null,
+						ime varchar,
+						prezime varchar);
 alter table instruktori
 	add constraint pk_instruktor primary key (id_ins);
 alter table instruktori
 	add constraint jedan_auto unique (id_auto);
 
 
-create table polaznici (id_pol smallint not null, ime varchar, prezime varchar,
-platiti_uk int, placeno int, preostalo_sati int, teorija_p bool, prva_pomoc_p bool, voznja_p bool);
+create table polaznici (id_pol smallint not null,
+						ime varchar,
+						prezime varchar,
+						platiti_uk int,
+						placeno int,
+						preostalo_sati int,
+						teorija_p bool,
+						prva_pomoc_p bool,
+						voznja_p bool);
 alter table polaznici
 	add constraint pk_polaznik primary key (id_pol);
 ----------------------------------------------------------------------------------------------
@@ -64,15 +74,19 @@ prve pomoći.
 
 --takoder za svaki od predmeta postoji zasebna relacija u kojoj su evidentirani pojedini ispiti
 
-create table ispiti_teorija (id_pol smallint not null, termin timestamp, prolaz bool);
+create table ispiti_teorija (id_pol smallint not null,
+							termin timestamp, prolaz bool);
 alter table ispiti_teorija
 	add constraint fk_teorija foreign key (id_pol) references polaznici;
 
-create table ispiti_prva_pomoc (id_pol smallint not null, termin timestamp, prolaz bool);
+create table ispiti_prva_pomoc (id_pol smallint not null,
+							termin timestamp, prolaz bool);
 alter table ispiti_prva_pomoc
 	add constraint fk_prva_pomoc foreign key (id_pol) references polaznici;
 
-create table ispiti_voznja (id_pol smallint not null, termin timestamp, prolaz bool);
+create table ispiti_voznja (id_pol smallint not null, 
+							termin timestamp,
+							prolaz bool);
 alter table ispiti_voznja
 	add constraint fk_voznja foreign key (id_pol) references polaznici;
 

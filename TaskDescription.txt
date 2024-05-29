@@ -1,7 +1,18 @@
 Baza podataka čiju shemu gradite treba pokriti potrebe auto-škole.
 Auto-škola ima više instruktor(ic)a, svatko ima jedan automobil.
-Također ima i više polaznika/polaznica koji ju upisuju i plaćaju u jednoj ili više rata. Uz svakog polaznika treba evidentirati ukupnu školarinu koju treba platiti te ukupni do sada uplaćeni iznos, koji ne može biti veći od ukupne školarine, ali također prva uplata mora biti najmanje trećina ukupne školarine. Nije potrebno evidentirati pojedinačne uplate, nego samo kumulativno uplaćeni iznos. Ukupni iznos za platiti se može mijenjati tijekom vremena.
-Baza podataka treba omogućiti evidenciju ispita (teorija, prva pomoć, vožnja). Ispit je moguće položiti ili ne. Nije moguće evidentirati ispit iz vožnje ako polaznik nema položene ispite iz teorije i prve pomoći.
-Baza podataka treba omogućiti i evidenciju sati vožnje (polaznik, instruktor, datum, vrijeme). Izlazak na ispit iz vožnje nije moguć ako polaznik nema najmanje 35 sati vožnje. U slučaju pada iz vožnje, uz ispit se treba evidentirati i broj dodatnih sati vožnje koje polaznik treba odraditi prije sljedećeg izlaska na ispit.
-Baza podataka treba sadržavati pogled koji se koristi kao izvještaj o aktualnom stanju polaznika (onih koji još uvijek nisu položili vožnju), a koji treba obuhvatiti financijsko stanje (uplaćeno / treba još uplatiti), informaciju je li položio teoriju, je li položio prvu pomoć, koliko sati je vozio, koliko je puta izlazio na ispit iz vožnje te koliko dodatnih sati vožnje je ukupno imao određeno.
-Baza podataka također treba sadržavati funkciju koja će vratiti poredak instruktora prema održanim satima prema ulaznom parametru (godina za koju se poredak promatra). Uz ime i prezime instruktora treba ispisati ukupan broj održanih sati u godini, te razliku u odnosu na prosječan broj sati koji su svi instruktori te godine ostvarili.
+Također ima i više polaznika/polaznica koji ju upisuju i plaćaju u jednoj ili više rata. Uz svakog polaznika treba
+evidentirati ukupnu školarinu koju treba platiti te ukupni do sada uplaćeni iznos, koji ne može biti veći od ukupne
+školarine, ali također prva uplata mora biti najmanje trećina ukupne školarine. Nije potrebno evidentirati pojedinačne
+uplate, nego samo kumulativno uplaćeni iznos. Ukupni iznos za platiti se može mijenjati tijekom vremena.
+Baza podataka treba omogućiti evidenciju ispita (teorija, prva pomoć, vožnja). Ispit je moguće položiti ili ne.
+Nije moguće evidentirati ispit iz vožnje ako polaznik nema položene ispite iz teorije i prve pomoći.
+Baza podataka treba omogućiti i evidenciju sati vožnje (polaznik, instruktor, datum, vrijeme). Izlazak na ispit
+iz vožnje nije moguć ako polaznik nema najmanje 35 sati vožnje. U slučaju pada iz vožnje, uz ispit se treba
+evidentirati i broj dodatnih sati vožnje koje polaznik treba odraditi prije sljedećeg izlaska na ispit.
+Baza podataka treba sadržavati pogled koji se koristi kao izvještaj o aktualnom stanju polaznika (onih koji
+još uvijek nisu položili vožnju), a koji treba obuhvatiti financijsko stanje (uplaćeno / treba još uplatiti),
+informaciju je li položio teoriju, je li položio prvu pomoć, koliko sati je vozio, koliko je puta izlazio na
+ispit iz vožnje te koliko dodatnih sati vožnje je ukupno imao određeno.
+Baza podataka također treba sadržavati funkciju koja će vratiti poredak instruktora prema održanim satima prema
+ulaznom parametru (godina za koju se poredak promatra). Uz ime i prezime instruktora treba ispisati ukupan broj
+održanih sati u godini, te razliku u odnosu na prosječan broj sati koji su svi instruktori te godine ostvarili.
